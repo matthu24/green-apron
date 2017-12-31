@@ -17,5 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
       store = configureStore();
     }
     //replace root with Root component, which has store passed into it as a prop
-  ReactDOM.render(<Root store={store} />, root); //OR 'root'
+  ReactDOM.render(<Root/>, root); //OR 'root'
 });

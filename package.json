@@ -1,6 +1,10 @@
 {
   "name": "greenApron",
   "private": true,
+  "engines": {
+   "node": "4.1.1",
+   "npm": "2.1.x"
+ },
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -24,7 +28,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --watch"
+    "webpack": "webpack --watch",
+     "postinstall": "webpack"
   },
   "keywords": [],
   "author": "",
