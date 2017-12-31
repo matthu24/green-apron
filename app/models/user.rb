@@ -13,13 +13,13 @@ class User < ApplicationRecord
       user
     end
 
-    #uses Bycrypt to make a new password from the password_digest
+    #uses Bycrypt generate the real password from the password_digest
     #then compares to the real password
     def is_password?(password)
       BCrypt::Password.new(self.password_digest).is_password?(password)
     end
 
-    #creates a password_digest from user's inputted password 
+    #creates a password_digest from user's inputted password
     def password=(password)
       @password = password
       self.password_digest = BCrypt::Password.create(password)
