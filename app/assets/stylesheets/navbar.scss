@@ -1,0 +1,21 @@
+
+.nav-bar{
+  display: flex;
+  border: solid 1px;
+  justify-content: space-around;
+}
+
+.left-nav div {
+  display: flex;
+  padding: 10px;
+
+  // border: solid 1px;
+
+}
+
+.right-nav div{
+  display: flex;
+    padding: 10px;
+  // border: solid 1px;
+
+}
