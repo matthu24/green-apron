@@ -13,10 +13,17 @@ class Splash extends React.Component {
 
     return(
       <div>
-          <ReactCSSTransitionGroup transitionName="anim" transitionAppear={true} transitionAppearTimeout={4000} transitionEnter={false} transitionLeave={false}>
-              <h2>{'Welcome to Green Apron'}</h2>
-          </ReactCSSTransitionGroup>
-          <img className='splash-image' src="https://s3.us-east-2.amazonaws.com/greenapron/splash_image.png"/>
+      <div className="splash-container">
+
+          <div className="other">Hey</div>
+          <img className='splash-image' src="https://s3.us-east-2.amazonaws.com/greenapron/splash_image3.png"/>
+          <div className="splash-text">Food is better when it starts from scratch.</div>
+      </div>
+      <div className="transition">
+        <ReactCSSTransitionGroup transitionName="anim" transitionAppear={true} transitionAppearTimeout={4000} transitionEnter={false} transitionLeave={false}>
+            <h2 className="green-apron">{'Green Apron'}</h2>
+        </ReactCSSTransitionGroup>
+      </div>
       </div>
     );
 

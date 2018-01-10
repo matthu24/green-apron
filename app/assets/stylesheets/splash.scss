@@ -1,3 +1,22 @@
 .splash-image{
   width:100%
 }
+
+.splash-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.splash-text {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 37px;
+    font-weight: bold;
+}
+.green-apron{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
