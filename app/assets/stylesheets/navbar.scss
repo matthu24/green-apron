@@ -1,8 +1,10 @@
 
 .nav-bar{
   display: flex;
-  border: solid 1px;
+  border-bottom:solid 1px;
   justify-content: space-around;
+  background-color: #2dbe60;
+  color: white;
 }
 
 .left-nav div {

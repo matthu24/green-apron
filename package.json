@@ -2,9 +2,9 @@
   "name": "greenApron",
   "private": true,
   "engines": {
-   "node": "4.1.1",
-   "npm": "2.1.x"
- },
+    "node": "4.1.1",
+    "npm": "2.1.x"
+  },
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -12,9 +12,11 @@
     "babel-preset-react": "^6.24.1",
     "lodash": "^4.17.4",
     "react": "^16.2.0",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "react-transition-group": "^2.2.1",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "webpack": "^3.10.0"
@@ -29,7 +31,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --watch",
-     "postinstall": "webpack"
+    "postinstall": "webpack"
   },
   "keywords": [],
   "author": "",
