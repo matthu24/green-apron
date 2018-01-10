@@ -26,10 +26,10 @@ class Splash extends React.Component {
       </div>
       <div className="testimonials">
         <div className = "testimony1">
-          Hands down, these recipes are the best.  Dinner would not be the same without Green Apron.
+          Hands down, these recipes are the best.  Dinner would simply not be the same without Green Apron.
         </div>
         <div className="testimony2">
-          Green Apron is my secret weapon in the kitchen.  A must-try for food-lovers!
+          Green Apron is my secret weapon in the kitchen.  Having all my recipes in one place is crucial!
         </div>
       </div>
       <div className = "second-splash-container">
