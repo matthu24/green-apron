@@ -20,7 +20,7 @@ class Splash extends React.Component {
           <div className="splash-text">Food is better when it starts from scratch.</div>
       </div>
       <div className="transition">
-
+        Green Apron
       </div>
       <div className="testimonials">
         <div className = "testimony1">
@@ -45,7 +45,7 @@ class Splash extends React.Component {
 //
 
 export default Splash;
-//
+// //
 // <ReactCSSTransitionGroup transitionName="anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
 //     <h2 className="green-apron">{'Green Apron'}</h2>
 // </ReactCSSTransitionGroup>

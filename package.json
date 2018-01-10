@@ -2,8 +2,8 @@
   "name": "greenApron",
   "private": true,
   "engines": {
-    "node": "4.1.1",
-    "npm": "2.1.x"
+    "node": "9.4.0",
+    "npm": "5.6.0"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
