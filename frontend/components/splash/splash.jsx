@@ -20,10 +20,23 @@ class Splash extends React.Component {
           <div className="splash-text">Food is better when it starts from scratch.</div>
       </div>
       <div className="transition">
-        <ReactCSSTransitionGroup transitionName="anim" transitionAppear={true} transitionAppearTimeout={4000} transitionEnter={false} transitionLeave={false}>
+        <ReactCSSTransitionGroup transitionName="anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
             <h2 className="green-apron">{'Green Apron'}</h2>
         </ReactCSSTransitionGroup>
       </div>
+      <div className="testimonials">
+        <div className = "testimony1">
+          Hands down, these recipes are the best.  Dinner would not be the same without Green Apron.
+        </div>
+        <div className="testimony2">
+          Green Apron is my secret weapon in the kitchen.  A must-try for food-lovers!
+        </div>
+      </div>
+      <div className = "second-splash-container">
+        <img className='second-splash' src="https://s3.us-east-2.amazonaws.com/greenapron/second_splash.png"/>
+
+      </div>
+
       </div>
     );
 
