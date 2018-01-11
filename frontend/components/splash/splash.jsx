@@ -15,7 +15,7 @@ class Splash extends React.Component {
       <div>
       <div className="splash-container">
 
-          <div className="splash-barrier"></div>
+          <div className="splash-barrier">Cook away.  Your recipes are safe with us.</div>
           <img className='splash-image' src="https://s3.us-east-2.amazonaws.com/greenapron/splash_image3.png"/>
           <div className="splash-text">Food is better when it starts from scratch.</div>
       </div>
