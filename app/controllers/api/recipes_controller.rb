@@ -8,7 +8,7 @@ class Api::RecipesController < ApplicationController
     if @recipe.save!
       render '/api/recipes/show'
     else
-      render josn: @recipe.errors.full_messages
+      render json: @recipe.errors.full_messages
     end
   end
 
