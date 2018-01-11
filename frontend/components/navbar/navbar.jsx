@@ -19,7 +19,7 @@ class NavBar extends React.Component {
     const leftNav = (
       <div>
         <div>Icon</div>
-        <div>Menu</div>
+        <Link to='/recipes'>Menu</Link>
       </div>
     );
     return(
