@@ -20,7 +20,7 @@ class Splash extends React.Component {
           <div className="splash-text">Food is better when it starts from scratch.</div>
       </div>
       <div className="transition">
-        Green Apron
+        Dinner, the Green Apron way.
       </div>
       <div className="testimonials">
         <div className = "testimony1">

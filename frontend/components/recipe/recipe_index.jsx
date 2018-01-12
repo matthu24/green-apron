@@ -1,5 +1,5 @@
 import React from 'react';
-
+import RecipeIndexItem from './recipe_index_item';
 
 class RecipeIndex extends React.Component{
   constructor(props){
@@ -14,7 +14,7 @@ class RecipeIndex extends React.Component{
         <ul className = 'recipe-index'>
           {
             this.props.recipes.map((recipe,idx) => (
-              <li key={idx}>{recipe.title}</li>
+              <RecipeIndexItem key = {idx} recipe={recipe}/>
             ))
           }
         </ul>

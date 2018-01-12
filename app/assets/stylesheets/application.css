@@ -16,8 +16,7 @@
 
 body{
   margin: 0;
-  font-family: Sans-Serif;
-
+  font-family:"Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
 
 .anim-appear {
@@ -27,4 +26,8 @@ body{
 .anim-appear.anim-appear-active{
   opacity: 2;
   transition: opacity 5s ease-in;
+}
+
+li{
+  list-style: none;
 }
