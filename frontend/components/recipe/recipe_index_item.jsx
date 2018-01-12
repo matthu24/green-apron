@@ -4,6 +4,7 @@ import React from 'react';
 export default props => {
   const recipeImage = props.recipe.image_file_name;
   return (
+
     <li className="recipe-item">
       <img className='recipe-image' src={recipeImage}/>
       <div className='recipe-title'>
@@ -13,6 +14,8 @@ export default props => {
         {props.recipe.description}
 
       </div>
+      <br></br>
+      <button className= 'favorite'>Favorite</button>
     </li>
   )
 }
