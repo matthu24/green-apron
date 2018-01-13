@@ -1,13 +1,13 @@
-export const fetchRecipeItems = () => {
+export const fetchRecipeItems = (recipeId) => {
   return $.ajax({
     method: 'GET',
-    url: 'api/recipe_items'
+    url: `api/recipes/${recipeId}/recipe_items`
   })
 }
 
-export const fetchRecipeItem = id => {
-  return $.ajax({
-    method: 'GET',
-    url: `api/recipe_items/${id}`
-  })
-}
+// export const fetchRecipeItem = id => {
+//   return $.ajax({
+//     method: 'GET',
+//     url: `api/recipe_items/${id}`
+//   })
+// }
