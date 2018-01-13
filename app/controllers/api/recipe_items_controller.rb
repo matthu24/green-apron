@@ -1,22 +1,22 @@
 class Api::RecipeItemsController < ApplicationController
   def index
-    @recipes = Recipe.all
+    @recipe_items = RecipeItem.all
   end
 
   def create
-    @recipe = Recipe.new(recipe_params)
-    if @recipe.save!
-      render '/api/recipes/show'
+    @recipe_item = RecipeItem.new(recipe_item_params)
+    if @recipe_item.save!
+      render '/api/recipe_items/show'
     else
-      render json: @recipe.errors.full_messages
+      render json: @recipe_item.errors.full_messages
     end
   end
 
   def show
-    @recipe = Recipe.find(params[:id])
+    @recipe_item = RecipeItem.find(params[:id])
   end
 
-  def recipe_params
-    params.require(:recipe).permit(:title,:description,:image_file_name,:ingredients)
+  def recipe_item_params
+    params.require(:recipe_item).permit(:recipe_id,:item_title,:item_description,:item_image_file_name)
   end
 end
