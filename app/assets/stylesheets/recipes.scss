@@ -30,6 +30,12 @@
 
 .recipe-title{
   font-weight: bold;
+  margin:3px;
+}
+
+.recipe-description{
+  color: gray;
+  font-style: italic;
 }
 
 .favorite{
@@ -49,4 +55,13 @@ text-decoration: none;
 display: inline-block;
 font-size: 12px;
 border: 1px solid #477987;
+}
+
+.index-headline{
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }

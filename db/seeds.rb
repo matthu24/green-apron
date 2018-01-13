@@ -9,6 +9,7 @@
 Recipe.destroy_all
 
 r1=Recipe.create!(title: "Vegetable Fried Rice", description: "with Torgarashi Peanuts",image_file_name:"https://s3.us-east-2.amazonaws.com/greenapron/Fried+Rice.png",ingredients:"Jasmine rice, Carrots, Baby bok choy, Broccoli, Eggs, Hoisin Sauce")
-r2=Recipe.create!(title: "Seared Salmon", description: "with Roasted Red Onion Vinaigrette",image_file_name:"https://s3.us-east-2.amazonaws.com/greenapron/Salmon.png",ingredients:"Salmon fillet,Dried dates,Carrots,Red Onion, Cabbage")
+r2=Recipe.create!(title: "General Tso's Chicken", description: "with Bok Choy and Jasmine Rice",image_file_name:"https://s3.us-east-2.amazonaws.com/greenapron/General+Tso's.png", ingredients: "Chicken breast, Bok choy, Jasmine rice, Garlic, Rice vinegar")
+
 r3 = Recipe.create!(title: "Mushroom and Goat Cheese Quiche", description: "with Green Leaf Lettuce Salad", image_file_name:"https://s3.us-east-2.amazonaws.com/greenapron/Quiche.png", ingredients: "Garlic, Lemon, Eggs, Mushrooms, Lettuce, Pie crusts")
-r4=Recipe.create!(title: "General Tso's Chicken", description: "with Bok Choy and Jasmine Rice",image_file_name:"https://s3.us-east-2.amazonaws.com/greenapron/General+Tso's.png", ingredients: "Chicken breast, Bok choy, Jasmine rice, Garlic, Rice vinegar")
+r4=Recipe.create!(title: "Seared Salmon", description: "with Roasted Red Onion Vinaigrette",image_file_name:"https://s3.us-east-2.amazonaws.com/greenapron/Salmon.png",ingredients:"Salmon fillet,Dried dates,Carrots,Red Onion, Cabbage")
