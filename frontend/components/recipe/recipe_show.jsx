@@ -8,12 +8,14 @@ class RecipeShow extends React.Component{
     super(props);
   }
 
+  //the route fetchAllRecipeItems is keying into is not filtering by recipeId
   componentDidMount(){
     this.props.fetchSingleRecipe(this.props.match.params.recipeId);
     this.props.fetchAllRecipeItems();
   }
 
   //map through recipe items here
+  //need to filter recipe items here in render 
   render(){
     return(
       <div>

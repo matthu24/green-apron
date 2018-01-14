@@ -1,3 +1,4 @@
+//don't need to access this route..it doesn't filter by recipe id
 export const fetchRecipeItems = (recipeId) => {
   return $.ajax({
     method: 'GET',

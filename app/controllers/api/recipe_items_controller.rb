@@ -18,6 +18,6 @@ class Api::RecipeItemsController < ApplicationController
   end
 
   def recipe_item_params
-    params.require(:recipe_item).permit(:item_title,:item_description,:item_image_file_name)
+    params.require(:recipe_item).permit(:recipe_id,:item_title,:item_description,:item_image_file_name)
   end
 end

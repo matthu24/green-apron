@@ -13,8 +13,8 @@ export const receiveRecipeItem = recipe_item => ({
   recipe_item
 })
 
-export const fetchAllRecipeItems = (recipeId) => dispatch => (
-  fetchRecipeItems(recipeId).then(recipe_items => dispatch(receiveRecipeItems(recipe_items)))
+export const fetchAllRecipeItems = () => dispatch => (
+  fetchRecipeItems().then(recipe_items => dispatch(receiveRecipeItems(recipe_items)))
 )
 
 // export const fetchSingleRecipeItem = recipe => dispatch => (
