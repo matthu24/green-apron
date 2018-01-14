@@ -18,5 +18,5 @@ export const fetchAllRecipes = () => dispatch => (
 );
 
 export const fetchSingleRecipe = (id) => dispatch => (
-  fetchRecipe().then(recipe => dispatch(receiveRecipe(recipe)))
+  fetchRecipe(id).then(recipe => dispatch(receiveRecipe(recipe)))
 );
