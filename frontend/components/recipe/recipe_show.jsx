@@ -10,7 +10,7 @@ class RecipeShow extends React.Component{
 
   componentDidMount(){
     this.props.fetchSingleRecipe(this.props.match.params.recipeId);
-    this.props.fetchAllRecipeItems(this.props.match.params.recipeId);
+    this.props.fetchAllRecipeItems();
   }
 
   //map through recipe items here
@@ -18,7 +18,12 @@ class RecipeShow extends React.Component{
     return(
       <div>
         <ul>
-          {this.props.recipeItems.map((item,id) => <li key={id} >{item.item_title}</li>)}
+          {this.props.recipeItems.map((item,id) =>
+            (item.recipe_id === this.props.recipe.id) ?
+            (<li key={id} >{item.item_title}</li>) :
+            (<div></div>)
+
+          )}
         </ul>
       </div>
     )

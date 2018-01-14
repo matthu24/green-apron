@@ -5,6 +5,7 @@ class Api::RecipeItemsController < ApplicationController
 
   def create
     @recipe_item = RecipeItem.new(recipe_item_params)
+    # @recipe_item.recipe_id=params[:recipe_id]
     if @recipe_item.save!
       render '/api/recipe_items/show'
     else
@@ -17,6 +18,6 @@ class Api::RecipeItemsController < ApplicationController
   end
 
   def recipe_item_params
-    params.require(:recipe_item).permit(:recipe_id,:item_title,:item_description,:item_image_file_name)
+    params.require(:recipe_item).permit(:item_title,:item_description,:item_image_file_name)
   end
 end
