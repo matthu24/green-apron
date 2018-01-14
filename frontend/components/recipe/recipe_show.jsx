@@ -13,10 +13,13 @@ class RecipeShow extends React.Component{
     this.props.fetchAllRecipeItems(this.props.match.params.recipeId);
   }
 
+  //map through recipe items here
   render(){
     return(
       <div>
-        recipe items
+        <ul>
+          {this.props.recipeItems.map((item,id) => <li key={id} >{item.item_title}</li>)}
+        </ul>
       </div>
     )
   }
