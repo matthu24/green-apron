@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Recipe.destroy_all
+RecipeItem.destroy_all
 
 r1=Recipe.create!(title: "Vegetable Fried Rice", description: "with Torgarashi Peanuts",image_file_name:"https://s3.us-east-2.amazonaws.com/greenapron/Fried+Rice.png",ingredients:"Jasmine rice, Carrots, Baby bok choy, Broccoli, Eggs, Hoisin Sauce")
 r2=Recipe.create!(title: "General Tso's Chicken", description: "with Bok Choy and Jasmine Rice",image_file_name:"https://s3.us-east-2.amazonaws.com/greenapron/General+Tso's.png", ingredients: "Chicken breast, Bok choy, Jasmine rice, Garlic, Rice vinegar")
