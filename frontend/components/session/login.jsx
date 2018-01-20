@@ -19,6 +19,11 @@ class Login extends React.Component{
 
   }
 
+  guestUser(){
+  const user = {username: "Guest",password:"password"};
+  this.props.login(user);
+}
+
   renderErrors(){
     const errors = this.props.errors ? (
       <ul>{
@@ -40,6 +45,11 @@ class Login extends React.Component{
   }
 
   render(){
+    if (this.props.location.pathname === '/guest') {
+
+this.guestUser();
+return null;
+}
     return(
       <div>
 
