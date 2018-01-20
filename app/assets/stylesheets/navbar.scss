@@ -28,9 +28,14 @@
 
 .right-nav div{
   display: flex;
+  align-items: center;
     padding: 17px;
   // border: solid 1px;
 
+}
+.right-nav a{
+  padding: 17px;
+  text-decoration: none;
 }
 .logo{
   width:95px;
