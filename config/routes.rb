@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
 
     resources :recipe_items, only: [:destroy, :show]
+    resources :favorites, only: [:show, :create, :destroy, :index]
   end
 end
