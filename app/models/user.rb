@@ -4,6 +4,7 @@ class User < ApplicationRecord
 
     attr_reader :password
 
+    has_many :favorites
 
     after_initialize :ensure_session_token
 
