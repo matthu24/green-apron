@@ -45,7 +45,7 @@ class NavBar extends React.Component {
   const navContent = this.props.currentUser ? (
     <div>
       <div>Hi {this.props.currentUser.username}</div>
-      <div>My Recipes</div>
+      <NavLink to='/myRecipes' exact={true} activeStyle={{ textDecoration: 'underline'}}>My Recipes</NavLink>
       <div><a href="#" onClick={this.props.logout}>Log Out</a></div>
     </div>
   ) : (

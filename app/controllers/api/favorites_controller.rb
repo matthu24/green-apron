@@ -1,6 +1,6 @@
 class Api::FavoritesController < ApplicationController
   def show
-    @favorite = Favorite.find_by(user_id: params[:userId], recipe_id: params[:recipeId]);
+    @favorite = Favorite.find(params[:id]);
 
   end
 
@@ -12,7 +12,7 @@ class Api::FavoritesController < ApplicationController
   def create
     @favorite = Favorite.new(favorite_params);
     if @favorite.save!
-      render :show
+      render '/api/favorites/show'
     else
       render json: @favorite.errors.full_messages
     end
@@ -21,12 +21,12 @@ class Api::FavoritesController < ApplicationController
 
 
   def destroy
-    @favorite = Favorite.find_by(user_id: params[:userId], recipe_id: params[:recipeId]);
+    @favorite = Favorite.find(params[:id]);
     @favorite.destroy
   end
 
 
   def favorite_params
-    params.require(:favorite).permit(:user_id, :recipe_id)
+    params.permit(:user_id, :recipe_id)
   end
 end

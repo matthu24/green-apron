@@ -8,6 +8,7 @@
 User.destroy_all
 Recipe.destroy_all
 RecipeItem.destroy_all
+Favorite.destroy_all
 u1 = User.create!(username: "Guest", password: "password")
 
 r1=Recipe.create!(title: "Vegetable Fried Rice", description: "with Torgarashi Peanuts",image_file_name:"https://s3.us-east-2.amazonaws.com/greenapron/Fried+Rice.png",ingredients:"Jasmine rice, Carrots, Baby bok choy, Broccoli, Eggs, Hoisin Sauce")
@@ -25,6 +26,6 @@ ri4 = RecipeItem.create!(recipe_id: r1.id, item_title:"Make the togarashi peanut
 ri5 = RecipeItem.create!(recipe_id: r1.id, item_title:"Cook the vegetables and eggs", item_description: "In the same pan, heat 2 teaspoons of olive oil on medium-high until hot. Add the sliced carrots and chopped ginger; season with salt and pepper. Cook, stirring occasionally, 3 to 4 minutes, or until lightly browned and slightly softened. Add the chopped bok choy; season with salt and pepper. Cook, stirring frequently, 1 to 2 minutes, or until slightly softened. Using a spoon, move the vegetables to one side of the pan. Add 1 teaspoon of olive oil and the beaten eggs to the other side. Cook, constantly stirring the eggs, 30 seconds to 1 minute, or until cooked through. Stir the vegetables and eggs to combine. Transfer to a large bowl. Wipe out the pan.", item_image_file_name: "https://s3.us-east-2.amazonaws.com/greenapron/FriedRice5.png")
 ri6 = RecipeItem.create!(recipe_id: r1.id, item_title:"Finish and serve", item_description: "In the same pan, heat 1 tablespoon of olive oil on medium-high until hot. Add the cooked rice in an even layer and cook, without stirring, 3 to 4 minutes, or until slightly crispy. Add the sauce and cook, stirring constantly, 30 seconds to 1 minute, or until combined. Transfer to the bowl of cooked vegetables and eggs. Add the roasted broccoli. Stir to thoroughly combine; season with salt and pepper to taste. Garnish the finished rice with the togarashi peanuts. Enjoy!", item_image_file_name: "https://s3.us-east-2.amazonaws.com/greenapron/FriedRice6.png")
 
-
+f1 = Favorite.create!(user_id: u1.id, recipe_id: r1.id);
 
 # ri3 = RecipeItem.create!(recipe_id: r2.id, item_title: "chicken item", item_description: "asdfaf", item_image_file_name: "asdf")
