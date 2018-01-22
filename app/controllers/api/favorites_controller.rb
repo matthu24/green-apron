@@ -4,6 +4,10 @@ class Api::FavoritesController < ApplicationController
 
   end
 
+  def index
+    @favorites = Favorite.all
+  end
+
 
   def create
     @favorite = Favorite.new(favorite_params);
