@@ -8,6 +8,11 @@ class RecipeIndex extends React.Component{
   componentDidMount(){
     this.props.fetchAllRecipes();
   }
+
+  componentWillReceiveNewProps(newProps){
+    this.props.fetchAllRecipes();
+  }
+
   render(){
     let today = new Date();
     let day = today.getDay();

@@ -10,7 +10,7 @@ const receiveFavorite = favorite => ({
 
 const removeFavorite = favorite => ({
   type: REMOVE_FAVORITE,
-  favorite
+  favorite:null
 });
 
 export const createSingleFavorite = favorite => dispatch => {

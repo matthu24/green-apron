@@ -11,6 +11,10 @@ class MyRecipeIndex extends React.Component{
   componentDidMount(){
     this.props.fetchAllRecipes();
   }
+  componentWillReceiveNewProps(newProps){
+    this.props.fetchAllRecipes();
+  }
+
 
   render(){
     let favorite_recipes = [];
