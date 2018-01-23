@@ -20,7 +20,12 @@ class RecipeIndex extends React.Component{
         <ul className = 'recipe-index'>
           {
             this.props.recipes.map((recipe,idx) => (
-              <RecipeIndexItem key = {idx} recipe={recipe}/>
+              <RecipeIndexItem
+                key = {idx}
+                recipe={recipe}
+                createFavorite={this.props.createSingleFavorite}
+                currentUser={this.props.currentUser}
+                />
             ))
           }
         </ul>

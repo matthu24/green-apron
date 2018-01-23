@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import MyRecipeIndex from './my_recipe_index';
 import {values} from 'lodash';
+import {fetchAllRecipes} from '../../actions/recipe';
 
 //state.session essentially points to session reducer
 //session has a currentUser key
@@ -14,7 +15,6 @@ const mapStateToProps = state => ({
 //if signed in
 const mapDispatchToProps = dispatch => ({
   fetchAllRecipes: () => dispatch(fetchAllRecipes())
-
 });
 
 export default connect(

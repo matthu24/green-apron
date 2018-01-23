@@ -9,6 +9,7 @@ export default props => {
     <li className="recipe-item">
       <Link className='recipe-show' to ={`/recipes/${props.recipe.id}`}>
       <img className='recipe-image' src={recipeImage}/>
+        </Link>
       <div className='recipe-title'>
         {props.recipe.title}
       </div>
@@ -17,8 +18,9 @@ export default props => {
 
       </div>
       <br></br>
-      <button className= 'favorite'>Favorite</button>
-      </Link>
+      <button className= 'favorite'
+            onClick={()=>props.createFavorite({user_id: props.currentUser.id, recipe_id: props.recipe.id})}>Favorite</button>
+
   </li>
   )
 }

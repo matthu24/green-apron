@@ -7,6 +7,11 @@ class MyRecipeIndex extends React.Component{
   constructor(props){
     super(props)
   }
+
+  componentDidMount(){
+    this.props.fetchAllRecipes();
+  }
+
   render(){
     let favorite_recipes = [];
     let favorites_array = [];
@@ -17,7 +22,6 @@ class MyRecipeIndex extends React.Component{
       if(recipes[i].favorites){
         //favorites_array is [{user_id:7, recipe_id:8},{...}]
         favorites_array = Object.values(recipes[i].favorites);
-
         for(let j= 0; j < favorites_array.length;j++){
           //
           if (favorites_array[j].user_id === this.props.currentUser.id){
