@@ -24,11 +24,15 @@ class Splash extends React.Component {
       </div>
       <div className="testimonials">
         <div className = "testimony1">
-          Hands down, these recipes are the best.  Dinner would simply not be the same without Green Apron.
+          "Hands down, these recipes are the best.  Dinner would simply not be the same without Green Apron.
+          Sed ut perspiciatis unde omnis iste natus error sit volup tatem accus antium dolor emque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."      ~Jake
         </div>
+
         <div className="testimony2">
-          Green Apron is my secret weapon in the kitchen.  Having all my recipes in one place is crucial!
+          "Green Apron is my secret weapon in the kitchen.  Having all my recipes in one place is crucial!
+          Sed ut perspiciatis unde omnis iste natus error sit volup tatem accus antium dolor emque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."      ~Mary
         </div>
+
       </div>
       <div className = "second-splash-container">
         <img className='second-splash' src="https://s3.us-east-2.amazonaws.com/greenapron/second_splash.png"/>
