@@ -17,6 +17,6 @@ export const createSingleFavorite = favorite => dispatch => {
   return createFavorite(favorite)
 }
 
-export const deleteSingleFavorite = favorite => dispatch => {
-  return deleteFavorite(favorite).then(favorite=>dispatch(removeFavorite(favorite)))
+export const deleteSingleFavorite = favoriteId => dispatch => {
+  return deleteFavorite(favoriteId).then(favorite=>dispatch(removeFavorite(favorite)))
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import RecipeIndex from './recipe_index';
 import {fetchAllRecipes} from '../../actions/recipe';
-import {createSingleFavorite} from '../../actions/favorite';
+import {createSingleFavorite, deleteSingleFavorite} from '../../actions/favorite';
 
 
 const mapStateToProps = state => ({
@@ -12,7 +12,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchAllRecipes: () => dispatch(fetchAllRecipes()),
-  createSingleFavorite: favorite => dispatch(createSingleFavorite(favorite))
+  createSingleFavorite: favorite => dispatch(createSingleFavorite(favorite)),
+  deleteSingleFavorite: favoriteId => dispatch(deleteSingleFavorite(favoriteId))
 });
 //
 export default connect(

@@ -12,6 +12,7 @@ class RecipeIndex extends React.Component{
     let today = new Date();
     let day = today.getDay();
     let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    const recipes = this.props.recipes;
     return(
       <div className= 'recipe-index-container'>
         <div className="splash-barrier">Cook away.  Your recipes are safe with us.</div>
@@ -22,8 +23,10 @@ class RecipeIndex extends React.Component{
             this.props.recipes.map((recipe,idx) => (
               <RecipeIndexItem
                 key = {idx}
+                recipes = {recipes}
                 recipe={recipe}
                 createFavorite={this.props.createSingleFavorite}
+                deleteFavorite={this.props.deleteSingleFavorite}
                 currentUser={this.props.currentUser}
                 />
             ))

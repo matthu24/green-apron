@@ -23,6 +23,7 @@ class Api::FavoritesController < ApplicationController
   def destroy
     @favorite = Favorite.find(params[:id]);
     @favorite.destroy
+    render '/api/favorites/show'
   end
 
 
