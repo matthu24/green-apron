@@ -7,8 +7,8 @@ export default (recipes={},action)=>{
   Object.freeze(recipes);
   switch(action.type) {
     case RECEIVE_RECIPES:
-      return merge({},recipes,action.recipes);
-    
+      return merge({},action.recipes);
+
     case RECEIVE_RECIPE:
       return merge({},recipes,{[action.recipe.id]:action.recipe});
     default:
