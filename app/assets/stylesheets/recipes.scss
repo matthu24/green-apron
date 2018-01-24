@@ -36,6 +36,15 @@
   margin-right: 30px;
 }
 
+.my-recipe-index{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
 .recipe-title{
   font-weight: bold;
   margin:3px;
@@ -63,6 +72,23 @@ text-decoration: none;
 display: inline-block;
 font-size: 12px;
 border: 1px solid #477987;
+}
+
+.un-favorite{
+  width: 150px;
+  height: 30px;
+  margin-left: -2px;
+  // background-color: #477987; /* Green */
+  background-color: #477987;
+  border: none;
+  color: white;
+  font-weight: bold;
+  // padding: 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid #477987;
 }
 
 .index-headline{
@@ -100,5 +126,23 @@ border: 1px solid #477987;
 .instructions{
   font-size: 32px;
   font-weight: bold;
+
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.favorite-item{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 1px solid #C0C0C0;
+    border: 1px solid #477987;
+    width: 300px;
+    height: 370px;
+    margin: 30px;
+
 
 }

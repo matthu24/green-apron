@@ -1,5 +1,6 @@
 import React from 'react';
 import RecipeIndexItem from './recipe_index_item';
+// import RecipeIndexItemContainer from './recipe_index_item_container';
 
 class RecipeIndex extends React.Component{
   constructor(props){

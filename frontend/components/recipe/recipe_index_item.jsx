@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 // show image, title, and description
 export default props => {
@@ -21,7 +22,6 @@ export default props => {
           if (favorite.user_id === props.currentUser.id && favorite.recipe_id === props.recipe.id){
               favorited = true;
               favorited_id = favorite_id;
-
           }
 
         }
@@ -35,32 +35,87 @@ export default props => {
       }
     })
   }
+  const deleteFavorite = () => {
+    props.deleteFavorite(favorited_id)
+  };
+
+  const createFavorite = () => {
+    props.createFavorite({user_id: props.currentUser.id, recipe_id: props.recipe.id})
+  }
 
   const recipeImage = props.recipe.image_file_name;
-  return (
+  if (favorited) {
+    return(
+      <li className="recipe-item">
+          <Link className='recipe-show' to ={`/recipes/${props.recipe.id}`}>
+          <img className='recipe-image' src={recipeImage}/>
+            </Link>
+          <div className='recipe-title'>
+            {props.recipe.title}
+          </div>
+          <div className='recipe-description'>
+            {props.recipe.description}
 
-    <li className="recipe-item">
-      <Link className='recipe-show' to ={`/recipes/${props.recipe.id}`}>
-      <img className='recipe-image' src={recipeImage}/>
-        </Link>
-      <div className='recipe-title'>
-        {props.recipe.title}
-      </div>
-      <div className='recipe-description'>
-        {props.recipe.description}
+          </div>
+          <br></br>
+            <NavLink to='/myRecipes' exact={true} activeStyle={{ textDecoration: 'underline'}}>
 
-      </div>
-      <br></br>
+              <button className='un-favorite'
+                 onClick={deleteFavorite}>Unfavorite
+               </button>
+             </NavLink>
 
-      <button className= 'favorite'
-        onClick={()=>props.createFavorite({user_id: props.currentUser.id, recipe_id: props.recipe.id})}>Favorite
-      </button>
-      <button className='un-favorite'
-         onClick={()=>props.deleteFavorite(favorited_id)}>Unfavorite
-       </button>
+      </li>
+    )
+  }else{
+    return(
+      <li className="recipe-item">
+         <Link className='recipe-show' to ={`/recipes/${props.recipe.id}`}>
+         <img className='recipe-image' src={recipeImage}/>
+           </Link>
+         <div className='recipe-title'>
+           {props.recipe.title}
+         </div>
+         <div className='recipe-description'>
+           {props.recipe.description}
 
-  </li>
-  )
+         </div>
+         <br></br>
+         <NavLink to='/myRecipes' exact={true} activeStyle={{ textDecoration: 'underline'}}>
+           <button className= 'favorite'
+             onClick={createFavorite}>Favorite
+           </button>
+           </NavLink>
+     </li>
+    )
+  }
+
+  // const favoriteButton = favorited ? (
+  //   <button className='un-favorite'
+  //      onClick={deleteFavorite}>Unfavorite
+  //    </button>
+  // ):(
+  //   <button className= 'favorite'
+  //     onClick={()=>props.createFavorite({user_id: props.currentUser.id, recipe_id: props.recipe.id})}>Favorite
+  //   </button>
+  // )
+  //
+  // return (
+  //   <li className="recipe-item">
+  //     <Link className='recipe-show' to ={`/recipes/${props.recipe.id}`}>
+  //     <img className='recipe-image' src={recipeImage}/>
+  //       </Link>
+  //     <div className='recipe-title'>
+  //       {props.recipe.title}
+  //     </div>
+  //     <div className='recipe-description'>
+  //       {props.recipe.description}
+  //
+  //     </div>
+  //     <br></br>
+  //     {favoriteButton}
+  // </li>
+  // )
 }
 
 

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import RecipeIndexItem from '../recipe/recipe_index_item';
+import FavoriteIndexItem from '../favorite/favorite_index_item';
 
 
 class MyRecipeIndex extends React.Component{
@@ -47,10 +47,10 @@ class MyRecipeIndex extends React.Component{
 
     return(
       <div>
-        <ul>
+        <ul className='my-recipe-index'>
           {
             favorite_recipes.map((recipe,idx) => (
-              <RecipeIndexItem key = {idx} recipe={recipe}/>
+              <FavoriteIndexItem key = {idx} recipe={recipe}/>
             ))
           }
         </ul>
