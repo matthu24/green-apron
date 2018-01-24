@@ -32,6 +32,7 @@ class RecipeIndex extends React.Component{
               createFavorite={this.props.createSingleFavorite}
               deleteFavorite={this.props.deleteSingleFavorite}
               currentUser={this.props.currentUser}
+              counter = {0}
               />
           ))
         }

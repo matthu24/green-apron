@@ -27,6 +27,7 @@ class RecipeShow extends React.Component{
 
 
   render(){
+    if (!this.props.recipe) return null;
     return(
       <div className='recipe-show-container'>
         <div className="splash-barrier">Cook away.  Your recipes are safe with us.</div>

@@ -37,10 +37,13 @@ export default props => {
   }
   const deleteFavorite = () => {
     props.deleteFavorite(favorited_id)
+    props.counter +=1
   };
 
   const createFavorite = () => {
     props.createFavorite({user_id: props.currentUser.id, recipe_id: props.recipe.id})
+    props.counter +=1
+
   }
 
   const recipeImage = props.recipe.image_file_name;
