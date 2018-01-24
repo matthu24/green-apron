@@ -46,7 +46,10 @@ class MyRecipeIndex extends React.Component{
 //this goes inside a ul
 
     return(
+
       <div>
+        <div className="splash-barrier">Cook away.  Your recipes are safe with us.</div>
+
         <ul className='my-recipe-index'>
           {
             favorite_recipes.map((recipe,idx) => (
