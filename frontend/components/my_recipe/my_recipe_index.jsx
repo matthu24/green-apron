@@ -49,6 +49,7 @@ class MyRecipeIndex extends React.Component{
 
       <div>
         <div className="splash-barrier">Cook away.  Your recipes are safe with us.</div>
+        <h1 className='index-headline'>My Favorites</h1>
 
         <ul className='my-recipe-index'>
           {
