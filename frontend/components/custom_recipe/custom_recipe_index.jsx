@@ -5,6 +5,12 @@ class CustomRecipeIndex extends React.Component {
     super(props);
   }
   render(){
-    
+    return(
+      <div>
+        hello custom recipe index
+      </div>
+    )
   }
 }
+
+export default CustomRecipeIndex;

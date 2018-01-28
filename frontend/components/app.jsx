@@ -5,6 +5,7 @@ import SignupContainer from './session/signup_container';
 import LoginContainer from './session/login_container';
 import NavBarContainer from './navbar/navbar_container';
 import Splash from './splash/splash';
+import CustomRecipeIndex from './custom_recipe/custom_recipe_index';
 import MyRecipeIndexContainer from './my_recipe/my_recipe_index_container'
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 
@@ -22,6 +23,7 @@ const App = () => (
         <Route exact path = "/recipes" component={Menu}/>
         <Route exact path = "/recipes/:recipeId" component={RecipeShowContainer}/>
         <Route exact path = "/myRecipes" component={MyRecipeIndexContainer}/>
+        <Route exact path = "/customRecipes" component = {CustomRecipeIndex}/>
       </Switch>
   </div>
 
