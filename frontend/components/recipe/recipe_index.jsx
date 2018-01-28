@@ -1,5 +1,6 @@
 import React from 'react';
 import RecipeIndexItem from './recipe_index_item';
+import RecipeIndexItemClass from './recipe_index_item_class';
 import FavoriteIndexItem from '../favorite/favorite_index_item';
 // import RecipeIndexItemContainer from './recipe_index_item_container';
 
@@ -32,7 +33,7 @@ class RecipeIndex extends React.Component{
               createFavorite={this.props.createSingleFavorite}
               deleteFavorite={this.props.deleteSingleFavorite}
               currentUser={this.props.currentUser}
-              counter = {0}
+
               />
           ))
         }
