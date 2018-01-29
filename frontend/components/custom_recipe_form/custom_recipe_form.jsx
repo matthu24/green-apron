@@ -8,8 +8,20 @@ class CustomRecipeForm extends React.Component {
     return(
       <div>
         <div className="splash-barrier">Cook away.  Your recipes are safe with us.</div>
+        <h2>Make your own recipe</h2>
+        <form>
+          <label>Ingredients List</label>
+          <br/>
+          <input type="text"/>
+          <br/>
+          <label>Recipe</label>
+          <br/>
+          <textarea/>
+          <br/>
+          <input type="submit"/>
 
-        hello custom recipe form
+        </form>
+
       </div>
     )
   }
