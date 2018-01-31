@@ -1,6 +1,35 @@
+.modal-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  align-self: center;
+  width: 50%;
+  position: fixed;
+  top:10%;
+  left:25%;
+};
+
 .recipe-form{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+form textarea{
+
+  margin: 30px;
+  height:100px;
+  width: 300px;
+}
+
+form input{
+  margin: 20px;
+  width: 300px;
+
+
 }
