@@ -61,7 +61,7 @@ class NavBar extends React.Component {
   return (
     <header className="nav-bar">
       <div className="left-nav">
-        <Link to='/'><img className='logo' src="https://s3.us-east-2.amazonaws.com/greenapron/Logo2.png"/></Link>
+        <Link to='/'><img className='logo' src="https://s3.us-east-2.amazonaws.com/greenapron/Screen+Shot+2018-01-30+at+11.37.51+PM.png"/></Link>
           <NavLink to='/recipes' exact={true} activeStyle={{ textDecoration: 'underline' }}>Menu</NavLink>
 
       </div>
