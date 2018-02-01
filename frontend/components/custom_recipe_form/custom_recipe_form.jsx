@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactModal from 'react-modal';
+import ModalContainer from './modal_container';
 
 ReactModal.defaultStyles.overlay.backgroundColor = 'rgba(128,128,128,0.75)';
 
@@ -34,28 +35,8 @@ class CustomRecipeForm extends React.Component {
             shouldCloseOnOverlayClick={true}
             ariaHideApp={false}
             >
-            <form >
-              <div>Upload photo</div>
-              <label className="title-label">Title</label>
-              <br/>
-              <input className="title-input"></input>
-              <br/>
-                <label className="description-label">Description</label>
-                <br/>
-                <input className='description-input'/>
-                  <br/>
+            <ModalContainer/>
 
-              <label className="ingredients-label">Ingredients List</label>
-              <br/>
-              <textarea className="ingredients-text"/>
-              <br/>
-              <label className="directions-lalbel">Directions</label>
-              <br/>
-              <textarea className="directions-text"/>
-              <br/>
-              <input className='form-submit' type="submit"/>
-
-            </form>
             <button className="close-modal" onClick={this.closeModal}>Close</button>
           </ReactModal>
         </div>

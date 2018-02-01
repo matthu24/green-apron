@@ -7,7 +7,7 @@ import NavBarContainer from './navbar/navbar_container';
 import Splash from './splash/splash';
 import CustomRecipeIndex from './custom_recipe/custom_recipe_index';
 import MyRecipeIndexContainer from './my_recipe/my_recipe_index_container'
-import CustomRecipeForm from './custom_recipe_form/custom_recipe_form';
+import CustomRecipeForm from './custom_recipe_form/custom_recipe_form_container';
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 import Menu from './recipe/recipe_index_container';
 import RecipeShowContainer from './recipe/recipe_show_container';
