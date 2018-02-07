@@ -7,7 +7,10 @@ class CustomRecipeIndex extends React.Component {
   }
 
   componentDidMount(){
+    if (this.props.currentUser) {
       this.props.fetchCustomRecipes(this.props.currentUser.id);
+
+    }
   }
 
   render(){

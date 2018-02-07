@@ -11,6 +11,7 @@ import CustomRecipeForm from './custom_recipe_form/custom_recipe_form_container'
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 import Menu from './recipe/recipe_index_container';
 import RecipeShowContainer from './recipe/recipe_show_container';
+import CustomRecipeItemShow from './custom_recipe_item/custom_recipe_item_container';
 
 const App = () => (
   <div>
@@ -23,6 +24,7 @@ const App = () => (
         <Route exact path = "/recipes" component={Menu}/>
         <Route exact path = "/recipes/:recipeId" component={RecipeShowContainer}/>
         <Route exact path = "/myRecipes" component={MyRecipeIndexContainer}/>
+        <Route exact path = "/customRecipes/:recipeId" component={CustomRecipeItemShow}/>
       </Switch>
         <Route exact path = "/customRecipes" component = {CustomRecipeForm}/>
         <Route exact path = "/customRecipes" component = {CustomRecipeIndex}/>

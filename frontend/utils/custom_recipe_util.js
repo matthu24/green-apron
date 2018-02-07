@@ -21,3 +21,10 @@ export const fetchUserCustomRecipes = (userId) => {
     method: 'GET'
   })
 }
+
+export const fetchCustomRecipe = (recipeId) => {
+  return $.ajax({
+    url:`/api/custom_recipes/${recipeId}`,
+    method: 'GET'
+  })
+}

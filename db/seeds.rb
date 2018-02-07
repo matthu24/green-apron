@@ -9,6 +9,7 @@ User.destroy_all
 Recipe.destroy_all
 RecipeItem.destroy_all
 Favorite.destroy_all
+CustomRecipe.destroy_all
 u1 = User.create!(username: "Guest", password: "password")
 
 r1=Recipe.create!(title: "Vegetable Fried Rice", description: "with Torgarashi Peanuts",image_file_name:"https://s3.us-east-2.amazonaws.com/greenapron/Fried+Rice.png",ingredients:"Jasmine rice, Carrots, Baby bok choy, Broccoli, Eggs, Hoisin Sauce")

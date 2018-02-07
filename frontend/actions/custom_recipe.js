@@ -1,4 +1,4 @@
-import {createCustomRecipe, deleteCustomRecipe, fetchUserCustomRecipes } from '../utils/custom_recipe_util';
+import {createCustomRecipe, deleteCustomRecipe, fetchUserCustomRecipes, fetchCustomRecipe } from '../utils/custom_recipe_util';
 
 
 export const RECEIVE_CUSTOM_RECIPE = 'RECEIVE_CUSTOM_RECIPE';
@@ -28,6 +28,10 @@ export const createSingleCustomRecipe = (user_id,custom_recipe) => dispatch => {
 
 export const fetchCustomRecipes = (user_id) => dispatch => {
   return fetchUserCustomRecipes(user_id).then(recipes => dispatch(receiveCustomRecipes(recipes)));
+}
+
+export const fetchSingleCustomRecipe = (recipe_id) => dispatch => {
+  return fetchCustomRecipe(recipe_id).then(recipe => dispatch(receiveCustomRecipe(recipe)));
 }
 
 // export const deleteSingleCustomRecipe =
