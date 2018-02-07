@@ -5,7 +5,7 @@ class Api::CustomRecipesController < ApplicationController
   end
 
   def show
-    @custom_recipes = CustomRecipe.find(params[:id])
+    @custom_recipe = CustomRecipe.find(params[:id])
   end
 
   def create

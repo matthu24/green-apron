@@ -1,3 +1,13 @@
+.custom-index{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.custom-item{
+  margin: 20px;
+}
+
 .modal-form{
   display: flex;
   flex-direction: column;

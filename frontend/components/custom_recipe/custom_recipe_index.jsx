@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomRecipeItem from './custom_recipe_item';
 
 class CustomRecipeIndex extends React.Component {
   constructor(props){
@@ -12,10 +13,10 @@ class CustomRecipeIndex extends React.Component {
   render(){
     return(
       <div>
-        <ul>
+        <ul className='custom-index'>
           {
             this.props.customRecipes.map((recipe,idx)=>(
-              <li key={idx}>{recipe.title}</li>
+              <CustomRecipeItem key={idx} recipe={recipe}/>
             ))
           }
         </ul>
