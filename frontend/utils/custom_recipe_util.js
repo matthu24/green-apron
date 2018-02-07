@@ -1,8 +1,8 @@
-export const createCustomRecipe = (userId,recipe) => {
+export const createCustomRecipe = (userId,custom_recipe) => {
   return $.ajax({
     url: `/api/users/${userId}/custom_recipes`,
     method: 'POST',
-    data: { recipe }
+    data: { custom_recipe }
   })
 }
 

@@ -32,6 +32,6 @@ class Api::CustomRecipesController < ApplicationController
 
 
   def custom_recipe_params
-    params.require(:custom_recipe).permit(:ingredients, :directions, :image_file_name,:description, :title  )
+    params.require(:custom_recipe).permit(:ingredients, :directions, :description, :title  )
   end
 end

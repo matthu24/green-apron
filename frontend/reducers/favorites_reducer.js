@@ -1,4 +1,5 @@
 import {RECEIVE_FAVORITES,RECEIVE_FAVORITE} from '../actions/favorite';
+import merge from 'lodash/merge';
 
 
 export default(favorites = {},action) => {
