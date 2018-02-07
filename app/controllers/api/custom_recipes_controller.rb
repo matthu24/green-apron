@@ -1,6 +1,7 @@
 class Api::CustomRecipesController < ApplicationController
   def index
-    @custom_recipes = CustomRecipe.all
+    currentUserId = current_user.id
+    @custom_recipes = CustomRecipe.where("user_id=#{currentUserId}")
   end
 
   def show

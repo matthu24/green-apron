@@ -26,4 +26,8 @@ export const createSingleCustomRecipe = (user_id,custom_recipe) => dispatch => {
   return createCustomRecipe(user_id, custom_recipe).then(recipe => dispatch(receiveCustomRecipe(recipe)));
 }
 
-// export const deleteSingleCustomRecipe = 
+export const fetchCustomRecipes = (user_id) => dispatch => {
+  return fetchUserCustomRecipes(user_id).then(recipes => dispatch(receiveCustomRecipes(recipes)));
+}
+
+// export const deleteSingleCustomRecipe =

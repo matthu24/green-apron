@@ -6,12 +6,13 @@ class CustomRecipeIndex extends React.Component {
   }
 
   componentDidMount(){
-    
+      this.props.fetchCustomRecipes(this.props.currentUser.id);
   }
+
   render(){
     return(
       <div>
-        hello custom recipe index
+        hello?
       </div>
     )
   }
