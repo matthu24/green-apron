@@ -5,7 +5,8 @@ import {fetchSingleCustomRecipe} from '../../actions/custom_recipe';
 
 const mapStateToProps = (state,ownProps) => ({
   //must specify which recipe it is through ownProps
-  custom_recipe: state.entities.custom_recipes[ownProps.match.params.recipeId],
+  customRecipe: state.entities.custom_recipes[ownProps.match.params.recipeId],
+  customRecipes: Object.values(state.entities.custom_recipes)
 });
 
 const mapDispatchToProps = dispatch => ({

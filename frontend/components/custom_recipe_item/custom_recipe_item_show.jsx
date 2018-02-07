@@ -6,12 +6,25 @@ class CustomRecipeItemShow extends React.Component{
   }
 
   componentDidMount(){
-    this.props.fetchSingleCustomRecipe(this.props.match.params.recipeId)
   }
 
   render(){
+    let ingredients;
+    let directions;
+    this.props.customRecipes.forEach(recipe => {
+      if (recipe.id === this.props.customRecipe.id){
+        ingredients = recipe.ingredients;
+        directions = recipe.directions;
+      }
+    })
     return(
-      <div>hello</div>
+      <div>
+        <div>Ingredients:</div>
+        <div>{ingredients}</div>
+        <div>Directions:</div>
+        <div>{directions}</div>
+
+      </div>
     )
   }
 }
