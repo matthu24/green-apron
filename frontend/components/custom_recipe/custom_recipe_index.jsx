@@ -12,7 +12,13 @@ class CustomRecipeIndex extends React.Component {
   render(){
     return(
       <div>
-        hello?
+        <ul>
+          {
+            this.props.customRecipes.map((recipe,idx)=>(
+              <li key={idx}>{recipe.title}</li>
+            ))
+          }
+        </ul>
       </div>
     )
   }
