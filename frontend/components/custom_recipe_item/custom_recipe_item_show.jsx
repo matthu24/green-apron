@@ -6,6 +6,9 @@ class CustomRecipeItemShow extends React.Component{
   }
 
   componentDidMount(){
+
+    this.props.fetchSingleCustomRecipe(this.props.match.params.recipeId);
+    this.props.fetchCustomRecipes(this.props.currentUser.id);
   }
 
   render(){
@@ -18,11 +21,16 @@ class CustomRecipeItemShow extends React.Component{
       }
     })
     return(
-      <div>
-        <div>Ingredients:</div>
-        <div>{ingredients}</div>
-        <div>Directions:</div>
-        <div>{directions}</div>
+      <div className='custom-recipe-show'>
+        <div className='ingredients-bundle'>
+          <div className='ingredients-label'>Ingredients:</div>
+          <div className='ingredients'>{ingredients}</div>
+        </div>
+        <div className='directions-bundle'>
+          <div className='directions-label'>Directions:</div>
+          <div className='directions'>{directions}</div>
+        </div>
+
 
       </div>
     )

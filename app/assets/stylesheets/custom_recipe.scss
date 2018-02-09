@@ -1,3 +1,33 @@
+.custom-recipe-show{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-recipe-show div{
+  margin: 30px;
+}
+
+.ingredients-bundle{
+  display:flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.directions-bundle{
+  display:flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+
+}
+
 .custom-index{
   display:flex;
   flex-direction: row;
