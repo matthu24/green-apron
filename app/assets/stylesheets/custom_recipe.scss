@@ -1,3 +1,7 @@
+.generic-food{
+  width: 300px;
+}
+
 .custom-recipe-show{
   display:flex;
   flex-direction: column;
@@ -30,13 +34,15 @@
 
 }
 
+
 .custom-index{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 
-  border: 1px solid black;
+  // border: 1px solid black;
+  margin-right: 30px;
 }
 
 .custom-item{
@@ -45,7 +51,10 @@
   flex-direction: column;
   // justify-content: center;
   align-items: center;
+  border: 1px solid black;
+  padding: 30px;
 }
+
 
 .modal-form{
   display: flex;
@@ -72,7 +81,6 @@
 }
 
 form textarea{
-
   margin: 30px;
   height:100px;
   width: 300px;
