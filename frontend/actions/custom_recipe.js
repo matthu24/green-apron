@@ -34,4 +34,8 @@ export const fetchSingleCustomRecipe = (recipe_id) => dispatch => {
   return fetchCustomRecipe(recipe_id).then(recipe => dispatch(receiveCustomRecipe(recipe)));
 }
 
+export const deleteSingleCustomRecipe = (recipe_id) => dispatch => {
+  return deleteCustomRecipe(recipe_id).then(recipe => dispatch(removeCustomRecipe(recipe)));
+}
+
 // export const deleteSingleCustomRecipe =
