@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import CustomRecipeIndex from './custom_recipe_index';
-import {fetchCustomRecipes} from '../../actions/custom_recipe';
+import {fetchCustomRecipes,deleteSingleCustomRecipe} from '../../actions/custom_recipe';
 
 
 const mapStateToProps = state => ({
@@ -12,7 +12,8 @@ const mapStateToProps = state => ({
 //want them to be able to just log out from navbar
 //if signed in
 const mapDispatchToProps = dispatch => ({
-  fetchCustomRecipes: (user_id) => dispatch(fetchCustomRecipes(user_id))
+  fetchCustomRecipes: (user_id) => dispatch(fetchCustomRecipes(user_id)),
+  deleteSingleCustomRecipe: (recipe_id) => dispatch(deleteSingleCustomRecipe(recipe_id))
 });
 
 export default connect(

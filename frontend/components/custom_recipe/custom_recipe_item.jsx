@@ -2,6 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default props => {
+  let recipe_id = props.recipe.id;
+
+  const deleteCustomRecipe = () => {
+    props.deleteCustomRecipe(recipe_id);
+  };
   return(
     <li className='custom-item'>
       <Link to={`/customRecipes/${props.recipe.id}`}>
@@ -9,7 +14,7 @@ export default props => {
         <div>{props.recipe.title}</div>
       </Link>
       <div className='custom-item-description'>{props.recipe.description}</div>
-      <button className='custom-item-delete'>Delete</button>
+      <button onClick={deleteCustomRecipe} className='custom-item-delete'>Delete</button>
     </li>
   )
 }
