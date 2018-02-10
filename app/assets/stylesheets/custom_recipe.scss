@@ -2,6 +2,25 @@
   width: 300px;
 }
 
+.custom-item-delete{
+
+  width: 150px;
+  height: 30px;
+  margin-left: -2px;
+  // background-color: #477987; /* Green */
+  background-color: #477987;
+  border: none;
+  color: white;
+  font-weight: bold;
+  // padding: 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid #477987;
+  margin-bottom: 10px;
+}
+
 .custom-recipe-show{
   display:flex;
   flex-direction: column;

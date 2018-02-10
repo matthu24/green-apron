@@ -23,21 +23,16 @@ export default props => {
               favorited = true;
               favorited_id = favorite_id;
           }
-
         }
-
       }
     })
   }
   const deleteFavorite = () => {
     props.deleteFavorite(favorited_id)
-
   };
 
   const createFavorite = () => {
     props.createFavorite({user_id: props.currentUser.id, recipe_id: props.recipe.id})
-
-
   }
 
   const recipeImage = props.recipe.image_file_name;
@@ -67,10 +62,10 @@ export default props => {
 
       </div>
       <br></br>
-  <NavLink to='/myRecipes' exact={true} activeStyle={{ textDecoration: 'underline'}}>
+      <NavLink to='/myRecipes' exact={true} activeStyle={{ textDecoration: 'underline'}}>
 
-      {favoriteButton}
-</NavLink>
+        {favoriteButton}
+      </NavLink>
 
   </li>
   )

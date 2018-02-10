@@ -2,7 +2,7 @@ import {createFavorite, deleteFavorite, fetchFavorites } from '../utils/favorite
 
 export const RECEIVE_FAVORITE = "RECEIVE_FAVORITE";
 export const RECEIVE_FAVORITES = "RECEIVE_FAVORITES";
-export const REMOVE_FAVORITE = "DELETE_FAVORITE";
+export const REMOVE_FAVORITE = "REMOVE_FAVORITE";
 
 const receiveFavorite = favorite => ({
   type: RECEIVE_FAVORITE,
