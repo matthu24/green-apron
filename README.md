@@ -1,1 +1,1 @@
-live site in progress: green-apron.herokuapp.com
+live site in progress: https://green-apron.herokuapp.com/
