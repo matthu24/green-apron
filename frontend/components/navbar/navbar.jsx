@@ -8,10 +8,10 @@ class NavBar extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-  if (this.props.location.pathname !== nextProps.location.pathname) {
-    this.props.clearErrors();
+    if (this.props.location.pathname !== nextProps.location.pathname) {
+      this.props.clearErrors();
+    }
   }
-}
 
   // render(){
   //   const rightNav = (
@@ -45,7 +45,7 @@ class NavBar extends React.Component {
   const navContent = this.props.currentUser ? (
     <div>
       <div>Hi {this.props.currentUser.username}</div>
-      <NavLink to='/myRecipes' exact={true} activeStyle={{ textDecoration: 'underline'}}>Favorites</NavLink>
+      <NavLink to='/favorites' exact={true} activeStyle={{ textDecoration: 'underline'}}>Favorites</NavLink>
       <NavLink to='/customRecipes' exact={true} activeStyle={{ textDecoration: 'underline'}}>Custom Recipes</NavLink>
 
       <div><a href="#" onClick={this.props.logout}>Log Out</a></div>

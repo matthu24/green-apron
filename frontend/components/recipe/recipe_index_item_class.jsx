@@ -74,7 +74,6 @@
 //         </div>
 //         <br></br>
 //           {favoriteButton}
-//
 //       </li>
 //     )
 //   }

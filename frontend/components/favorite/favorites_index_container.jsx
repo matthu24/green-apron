@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import MyRecipeIndex from './my_recipe_index';
+import FavoritesIndex from './favorites_index';
 import {values} from 'lodash';
 import {fetchAllRecipes} from '../../actions/recipe';
 
@@ -20,4 +20,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(MyRecipeIndex);
+)(FavoritesIndex);

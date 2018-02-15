@@ -2,15 +2,12 @@ import React from 'react';
 import { Link, Route } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
-// show image, title, and description
 export default props => {
   //loop through recipes and check if the current favorite exists (matches user id and recipe id)
   //if it does, render the unfavorite button, if not do the other one
-
   let favorited = false;
   let favorited_id;
   //recipes is an array of recipe objects
-  // if (!props.recipes) return null;
   if (props.recipes) {
     props.recipes.forEach(recipe => {
       //recipe is an object,
@@ -29,10 +26,14 @@ export default props => {
   }
   const deleteFavorite = () => {
     props.deleteFavorite(favorited_id)
+    //necessary to rerender the parent component of recipe items, which is the recipe index
+    setTimeout(()=>props.fetchAllRecipes(),100)
+
   };
 
   const createFavorite = () => {
     props.createFavorite({user_id: props.currentUser.id, recipe_id: props.recipe.id})
+    setTimeout(()=>props.fetchAllRecipes(),100)
   }
 
   const recipeImage = props.recipe.image_file_name;
@@ -45,7 +46,7 @@ export default props => {
 
   ):(
     <button className= 'favorite'
-      onClick={()=>props.createFavorite({user_id: props.currentUser.id, recipe_id: props.recipe.id})}>Favorite
+      onClick={createFavorite}>Favorite
     </button>
   )
 
@@ -62,10 +63,8 @@ export default props => {
 
       </div>
       <br></br>
-      <NavLink to='/myRecipes' exact={true} activeStyle={{ textDecoration: 'underline'}}>
 
         {favoriteButton}
-      </NavLink>
 
   </li>
   )

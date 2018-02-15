@@ -3,6 +3,11 @@ import {createFavorite, deleteFavorite, fetchFavorites } from '../utils/favorite
 export const RECEIVE_FAVORITE = "RECEIVE_FAVORITE";
 export const RECEIVE_FAVORITES = "RECEIVE_FAVORITES";
 export const REMOVE_FAVORITE = "REMOVE_FAVORITE";
+export const TOGGLE_FAVORITE = "TOGGLE_FAVORITE";
+
+const toggleFavorite = toggle => ({
+  type: TOGGLE_FAVORITE
+})
 
 const receiveFavorite = favorite => ({
   type: RECEIVE_FAVORITE,
@@ -18,6 +23,11 @@ const removeFavorite = favorite => ({
   type: REMOVE_FAVORITE,
   favorite
 });
+
+
+export const toggleSingleFavorite = () => dispatch => {
+  return dispatch(toggleFavorite());
+}
 
 export const fetchAllFavorites = () => dispatch => {
   return fetchFavorites().then(favorites => dispatch(receiveFavorites(favorites)))

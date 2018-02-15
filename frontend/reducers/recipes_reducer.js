@@ -5,7 +5,7 @@ import merge from 'lodash/merge';
 
 export default (recipes={},action)=>{
   Object.freeze(recipes);
-  switch(action.type) {
+  switch(action.type) {      
     case RECEIVE_RECIPES:
       return merge({},action.recipes);
 
