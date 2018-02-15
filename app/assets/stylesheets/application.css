@@ -22,6 +22,10 @@ body{
   font-family: 'Radley', serif;
 }
 
+button {
+    outline-style: none;
+}
+
 .anim-appear {
   opacity: 0.01;
 }
