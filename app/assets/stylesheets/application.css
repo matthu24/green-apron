@@ -14,12 +14,20 @@
  *= require_self
  */
 
-body{
+/*body{
   margin: 0;
-  /*font-family:"Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;*/
-  /*font-family: sans-serif;*/
-  /*font-family: 'Radley', serif;*/
+
   font-family: 'Radley', serif;
+}*/
+
+body {
+    /*background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);*/
+
+    font-family: 'Radley', serif;
+    margin: 0;
+
+    position: relative;
+    height: 100vh;
 }
 
 button {
