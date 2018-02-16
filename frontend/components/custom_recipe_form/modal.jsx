@@ -33,15 +33,14 @@ class Modal extends React.Component{
     return(
       <div>
         <form onSubmit={this.handleSubmit}>
-          <div>Upload photo</div>
           <label className="title-label">Title</label>
           <br/>
           <input onChange={this.handleChange('title')} id='title-input' className="title-input"></input>
           <br/>
-            <label className="description-label">Description</label>
+          <label className="description-label">Description</label>
+          <br/>
+          <input onChange={this.handleChange('description')} id='description-input' className='description-input'/>
             <br/>
-            <input onChange={this.handleChange('description')} id='description-input' className='description-input'/>
-              <br/>
 
           <label className="ingredients-label">Ingredients List</label>
           <br/>
@@ -51,7 +50,7 @@ class Modal extends React.Component{
           <br/>
           <textarea onChange={this.handleChange('directions')} id='directions-input' className="directions-text"/>
           <br/>
-  
+
           <input className='form-submit' type="submit"/>
 
 
