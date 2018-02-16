@@ -43,8 +43,9 @@ class Signup extends React.Component {
   render(){
     return(
       <div>
+        <div className="splash-barrier">Cook away.  Your recipes are safe with us.</div>
         <form className="signup-form">
-          <h3>Sign up for a fan account</h3>
+          <h3>Sign up for a user account</h3>
           <label htmlFor="username">Username
             <input type="text" value={this.state.username} onChange={this.update("username")}/>
           </label>

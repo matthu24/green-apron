@@ -52,7 +52,7 @@ return null;
 }
     return(
       <div>
-
+        <div className="splash-barrier">Cook away.  Your recipes are safe with us.</div>
         <form className="login-form">
           <h3>Log In</h3>
 
