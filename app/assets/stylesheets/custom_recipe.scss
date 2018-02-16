@@ -2,6 +2,24 @@
   width: 300px;
 }
 
+.close-modal{
+  width: 150px;
+  height: 30px;
+  margin-left: -2px;
+  // background-color: #477987; /* Green */
+  background-color: pink;
+  border: none;
+  color: white;
+  font-weight: bold;
+  // padding: 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid #477987;
+  margin-bottom: 10px;
+}
+
 .custom-item-delete{
 
   width: 150px;
@@ -106,7 +124,9 @@
   width: 50%;
   position: fixed;
   top:10%;
-  left:25%;
+  left:23.5%;
+  padding: 20px;
+  outline:none;
 };
 
 
@@ -121,7 +141,7 @@
 
 form textarea{
   margin: 30px;
-  height:100px;
+  height:50px;
   width: 300px;
 }
 
