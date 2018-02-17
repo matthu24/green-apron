@@ -6,6 +6,14 @@ export const createCustomRecipe = (userId,custom_recipe) => {
   })
 }
 
+export const updateCustomRecipe = (userId, custom_recipe) => {
+  return $.ajax({
+    url: `apis/users/${userId}/custom_recipes/${custom_recipe.id}`,
+    method: 'PATCH',
+    data: {custom_recipe}
+  })
+}
+
 
 export const deleteCustomRecipe = (recipeId) => {
   return $.ajax({

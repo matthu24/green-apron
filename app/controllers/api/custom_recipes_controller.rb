@@ -1,6 +1,6 @@
 class Api::CustomRecipesController < ApplicationController
   def index
-    currentUserId = current_user.id
+    currentUserId = current_user ? current_user.id : User.where("username = 'Guest'")[0].id
     @custom_recipes = CustomRecipe.where("user_id=#{currentUserId}")
   end
 
