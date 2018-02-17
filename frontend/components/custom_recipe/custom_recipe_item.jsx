@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import OpenUpdateForm from '../custom_recipe_form/open_update_form';
 
 export default props => {
   let recipe_id = props.recipe.id;
@@ -18,6 +19,7 @@ export default props => {
       </Link>
       <div className='custom-item-description'>{props.recipe.description}</div>
       <button onClick={deleteCustomRecipe} className='custom-item-delete'>Delete</button>
+      <OpenUpdateForm/>
     </li>
   )
 }
