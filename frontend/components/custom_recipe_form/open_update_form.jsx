@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactModal from 'react-modal';
-
+import ModalUpdateContainer from './modal_update_container';
 
 class OpenUpdateForm extends React.Component{
   constructor(props){
@@ -27,7 +27,7 @@ class OpenUpdateForm extends React.Component{
           shouldCloseOnOverlayClick={true}
           ariaHideApp={false}
           >
-          <div>hi</div>
+          <ModalUpdateContainer/>
           <button className='close-modal' onClick={this.closeModal}>Close</button>
         </ReactModal>
       </div>

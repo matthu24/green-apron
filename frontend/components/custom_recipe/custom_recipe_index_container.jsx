@@ -14,7 +14,6 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   fetchCustomRecipes: (user_id) => dispatch(fetchCustomRecipes(user_id)),
   deleteSingleCustomRecipe: (recipe_id) => dispatch(deleteSingleCustomRecipe(recipe_id)),
-  updateSingleCustomRecipe: (user_id, recipe) => dispatch(updateSingleCustomRecipe(recipe))
 
 });
 
