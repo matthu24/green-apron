@@ -24,6 +24,15 @@ class Api::CustomRecipesController < ApplicationController
     end
   end
 
+  def update
+    @custom_recipe = CustomRecipe.find(params[:id])
+    if @custom_recipe.update!
+      render :show
+    else
+      render json: @custom_recipe.errors.full_messages, status: 401
+    end
+  end
+
   def destroy
     @custom_recipe = CustomRecipe.find(params[:id])
     @custom_recipe.destroy

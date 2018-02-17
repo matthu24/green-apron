@@ -29,7 +29,7 @@ class CustomRecipeForm extends React.Component {
         <div className="splash-barrier">Cook away.  Your recipes are safe with us.</div>
         <div className='recipe-form'>
           <h2>Make your own recipe</h2>
-          <button className="modal-button" onClick={this.openModal}>Custon Form</button>
+          <button className="modal-button" onClick={this.openModal}>Custom Form</button>
           <ReactModal className="modal-form"
             isOpen={this.state.ModalIsOpen}
             shouldCloseOnOverlayClick={true}
