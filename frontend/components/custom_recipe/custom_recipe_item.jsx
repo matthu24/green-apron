@@ -9,7 +9,7 @@ export default props => {
     props.deleteCustomRecipe(recipe_id);
   };
 
-  //the edit button should open the modal again 
+  //the edit button should open the modal again
   return(
     <li className='custom-item'>
       <Link to={`/customRecipes/${props.recipe.id}`}>
@@ -18,7 +18,6 @@ export default props => {
       </Link>
       <div className='custom-item-description'>{props.recipe.description}</div>
       <button onClick={deleteCustomRecipe} className='custom-item-delete'>Delete</button>
-      <button className='custom-item-update'>Edit</button>
     </li>
   )
 }
