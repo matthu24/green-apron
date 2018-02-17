@@ -17,7 +17,7 @@ class Modal extends React.Component{
     const title = document.getElementById('title-input');
     title.value = '';
     const imageUrl = document.getElementById('image-input');
-    iamgeUrl.value = '';
+    imageUrl.value = '';
     const description = document.getElementById('description-input');
     description.value = '';
     const ingredients = document.getElementById('ingredients-input');

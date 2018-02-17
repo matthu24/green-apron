@@ -21,18 +21,22 @@ class CustomRecipeItemShow extends React.Component{
       }
     })
     return(
-      <div className='custom-recipe-show'>
-        <div className='ingredients-bundle'>
-          <div className='ingredients-label'>Ingredients:</div>
-          <div className='ingredients'>{ingredients}</div>
-        </div>
-        <div className='directions-bundle'>
-          <div className='directions-label'>Directions:</div>
-          <div className='directions'>{directions}</div>
-        </div>
+      <div>
+        <div className="splash-barrier">Cook away.  Your recipes are safe with us.</div>
+        <div className='custom-recipe-show'>
+          <div className='ingredients-bundle'>
+            <div className='ingredients-label'>Ingredients:</div>
+            <div className='ingredients'>{ingredients}</div>
+          </div>
+          <div className='directions-bundle'>
+            <div className='directions-label'>Directions:</div>
+            <div className='directions'>{directions}</div>
+          </div>
 
 
+        </div>
       </div>
+
     )
   }
 }
