@@ -19,7 +19,11 @@ class CustomRecipeIndex extends React.Component {
         <ul className='custom-index'>
           {
             this.props.customRecipes.map((recipe,idx)=>(
-              <CustomRecipeItem key={idx} recipe={recipe} deleteCustomRecipe={this.props.deleteSingleCustomRecipe}/>
+              <CustomRecipeItem
+                key={idx}
+                recipe={recipe}
+                updateCustomRecipe={this.props.updateSingleCustomRecipe}
+                deleteCustomRecipe={this.props.deleteSingleCustomRecipe}/>
             ))
           }
         </ul>
