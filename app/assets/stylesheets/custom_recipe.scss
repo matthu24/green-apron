@@ -1,5 +1,6 @@
 .generic-food{
   width: 300px;
+  height: 300px;
 }
 
 .close-modal{
@@ -17,6 +18,20 @@
   display: inline-block;
   font-size: 12px;
   margin-bottom: 10px;
+}
+
+.ingredients-label,
+.directions-label,
+.title-label,
+.image-label,
+.description-label,
+.title-input,
+.image-input,
+.description-inpu,
+.ingredients-text,
+.directions-text{
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .form-submit{

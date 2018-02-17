@@ -28,11 +28,10 @@ class Api::CustomRecipesController < ApplicationController
     @custom_recipe = CustomRecipe.find(params[:id])
     @custom_recipe.destroy
     render :show
-
   end
 
 
   def custom_recipe_params
-    params.require(:custom_recipe).permit(:ingredients, :directions, :description, :title  )
+    params.require(:custom_recipe).permit(:ingredients, :directions, :description, :title, :image_file_name  )
   end
 end

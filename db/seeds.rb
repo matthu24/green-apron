@@ -41,5 +41,5 @@ ri11 = RecipeItem.create!(recipe_id: r5.id, item_title:"Make the salad & serve y
 
 f1 = Favorite.create!(user_id: u1.id, recipe_id: r1.id);
 
-cr1 = CustomRecipe.create!(user_id: u1.id, title: "Safeway microwavable", description: "It's the best", ingredients: "the box", directions: "Microwave two minutes", image_file_name: "https://s3.us-east-2.amazonaws.com/greenapron/Fried+Rice.png")
+cr1 = CustomRecipe.create!(user_id: u1.id, title: "Safeway microwavable", description: "It's the best", ingredients: "the box", directions: "Microwave two minutes", image_file_name: "https://s3.us-east-2.amazonaws.com/greenapron/genericfood.png")
 # ri3 = RecipeItem.create!(recipe_id: r2.id, item_title: "chicken item", item_description: "asdfaf", item_image_file_name: "asdf")
