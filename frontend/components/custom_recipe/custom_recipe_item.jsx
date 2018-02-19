@@ -19,7 +19,7 @@ export default props => {
       </Link>
       <div className='custom-item-description'>{props.recipe.description}</div>
       <button onClick={deleteCustomRecipe} className='custom-item-delete'>Delete</button>
-      <OpenUpdateForm/>
+      <OpenUpdateForm recipe={props.recipe}/>
     </li>
   )
 }
