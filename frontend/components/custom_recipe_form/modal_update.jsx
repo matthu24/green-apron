@@ -24,6 +24,7 @@ class ModalUpdate extends React.Component{
     let test = this.props.recipe
     return(
       <div>
+        <h2>Custom Recipe</h2>
         <form onSubmit={this.handleSubmit}>
           <label className="title-label">Title</label>
           <br/>

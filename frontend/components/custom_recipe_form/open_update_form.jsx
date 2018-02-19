@@ -21,13 +21,13 @@ class OpenUpdateForm extends React.Component{
   render(){
     return(
       <div>
-        <button className="modal-button" onClick={this.openModal}>Edit</button>
+        <button className="edit-button" onClick={this.openModal}>Edit</button>
         <ReactModal className="modal-form"
           isOpen={this.state.ModalIsOpen}
           shouldCloseOnOverlayClick={true}
           ariaHideApp={false}
           >
-          <ModalUpdateContainer recipe={this.props.recipe}/>
+          <ModalUpdateContainer recipe={this.props.recipe} closeModal={this.closeModal}/>
           <button className='close-modal' onClick={this.closeModal}>Close</button>
         </ReactModal>
       </div>

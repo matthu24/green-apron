@@ -9,7 +9,7 @@ const mapStateToProps = (state,{recipe}) => ({
 
 })
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch,{closeModal}) => ({
   updateSingleCustomRecipe: (user_id, recipe) => dispatch(updateSingleCustomRecipe(user_id,recipe))
 })
 
