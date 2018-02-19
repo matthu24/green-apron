@@ -27,7 +27,7 @@ class OpenUpdateForm extends React.Component{
           shouldCloseOnOverlayClick={true}
           ariaHideApp={false}
           >
-          <ModalUpdateContainer/>
+          <ModalUpdateContainer recipe={this.props.recipe}/>
           <button className='close-modal' onClick={this.closeModal}>Close</button>
         </ReactModal>
       </div>

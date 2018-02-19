@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import ModalUpdate from './modal_update';
 import {updateSingleCustomRecipe} from '../../actions/custom_recipe';
 
-const mapStateToProps = state => ({
-  currentUser: state.session.currentUser
+const mapStateToProps = (state,{recipe}) => ({
+  currentUser: state.session.currentUser,
+  recipe
 
 })
 

@@ -26,7 +26,7 @@ class Api::CustomRecipesController < ApplicationController
 
   def update
     @custom_recipe = CustomRecipe.find(params[:id])
-    if @custom_recipe.update!
+    if @custom_recipe.update(custom_recipe_params)
       render :show
     else
       render json: @custom_recipe.errors.full_messages, status: 401
