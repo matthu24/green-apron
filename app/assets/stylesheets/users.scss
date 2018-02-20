@@ -8,10 +8,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  margin-top: 40px;
 }
 
 .alt-signup,
 .alt-login{
   text-decoration: none;
+  margin: 20px;
+}
+
+.session-input{
+  height: 25px;
 }

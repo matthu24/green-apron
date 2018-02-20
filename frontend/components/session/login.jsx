@@ -57,12 +57,12 @@ return null;
           <h3>Log In</h3>
 
           <label htmlFor="username">Username
-            <input type="text" value={this.state.username} onChange={this.update("username")}/>
+            <input className='session-input' type="text" value={this.state.username} onChange={this.update("username")}/>
           </label>
 
           <br/>
           <label htmlFor="password">Password
-            <input type="password" value={this.state.password} onChange={this.update("password")}/>
+            <input className='session-input' type="password" value={this.state.password} onChange={this.update("password")}/>
           </label>
 
           <br/>
