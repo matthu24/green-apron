@@ -12,6 +12,8 @@ class ModalUpdate extends React.Component{
   handleSubmit(e){
     e.preventDefault();
     this.props.updateSingleCustomRecipe(this.props.currentUser.id,this.state);
+    let updateNotification = document.querySelector('.update-notification')
+    updateNotification.style.display = 'block';
   }
 
   handleChange(field){
@@ -47,9 +49,8 @@ class ModalUpdate extends React.Component{
           <br/>
           <textarea value={this.state.directions} onChange={this.handleChange('directions')} id='directions-input' className="directions-text"/>
           <br/>
-
+          <div className='update-notification'>Update saved!</div>
           <input className='form-submit' type="submit"/>
-
 
 
         </form>
