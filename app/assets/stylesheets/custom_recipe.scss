@@ -3,8 +3,9 @@
   height: 300px;
 }
 
-.update-notification{
-  display:none;
+.update-notification,
+.custom-notification{
+  visibility: hidden;
 }
 
 .close-modal{

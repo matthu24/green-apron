@@ -13,7 +13,7 @@ class ModalUpdate extends React.Component{
     e.preventDefault();
     this.props.updateSingleCustomRecipe(this.props.currentUser.id,this.state);
     let updateNotification = document.querySelector('.update-notification')
-    updateNotification.style.display = 'block';
+    updateNotification.style.visibility = 'visible';
   }
 
   handleChange(field){

@@ -13,6 +13,8 @@ class Modal extends React.Component{
   handleSubmit(e){
     e.preventDefault();
     this.props.createSingleCustomRecipe(this.props.currentUser.id,this.state);
+    const customNotification = document.querySelector('.custom-notification')
+    customNotification.style.visibility = 'visible'
     //to clear fields after submitting
     const title = document.getElementById('title-input');
     title.value = '';
@@ -58,6 +60,7 @@ class Modal extends React.Component{
           <br/>
           <textarea onChange={this.handleChange('directions')} id='directions-input' className="directions-text"/>
           <br/>
+          <div className='custom-notification'>Recipe added!</div>
 
           <input className='form-submit' type="submit"/>
 
